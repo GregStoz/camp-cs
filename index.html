@@ -167,7 +167,8 @@
         .card-x2,
         .card-x3 {
             flex: 1 1 200px; 
-            max-width: 300px; 
+            max-width: 300px;
+            height: 220px; 
             background-color: #eee;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -186,8 +187,9 @@
         }
 
         .card-x3 img {
-            max-width: 250px;
+            width: 250px;
             height: 150px;
+            object-fit: contain;
             margin-bottom: 10px;
         }
 
@@ -210,6 +212,14 @@
 
         .highlight-btn {
             font-size: 18px;
+        }
+
+        .filtered-img {
+            filter:saturate();
+        }
+
+        .min-text {
+            font-size: 12px;
         }
 
         @media (max-width: 400px) {
@@ -268,6 +278,22 @@ gap: 8px;}
             </div>
             
         </div>
+        <div class="card-retratil" id="premiacoes">
+            <h3>Os campeões receberão:</h3>
+            <p>Inscrição gratuita para o próximo campeonato da <a class='highlight-text' target="_blank" href="https://www.instagram.com/mp3arenaesports/">MP3ARENA</a>.</p>
+            <p>Assinatura no perfil da STEAM feia por pessoas influentes do cenário. Nomes serão divulgados em breve.</p>
+            <p>Mais premiações serão incluídas em breve.</p>
+
+            <h4>Também teremos sorteios:</h4>
+            <p>2x voucher no valor de R$250 em viagens com a <a class='highlight-text' target="_blank" href="https://flytche.com.br/">FlyTchê</a>.*</p>
+            <p>2x voucher no valor de R$250 na troca de smartphones com a <a class='highlight-text' target="_blank" href="https://www.instagram.com/case.tri/">Case Tri</a>.*</p>
+            <p>Camiseta IMPERIAL.</p>
+            <p>Mais alguns brindes serão revelados em breve.</p>
+
+            <p class="min-text"><em>*Os vouchers terão uma validade de 90 dias (3 meses) a partir da finalização do campeonato. Confirmar disponibilidade de itens com as empresas parceiras.</em></p>
+
+
+        </div>
 
         <div class="card-retratil" id="doe">
             <h3>Instituições indicadas para as doações:</h3>
@@ -309,7 +335,7 @@ gap: 8px;}
 
             </div>
         </div>
-
+       
         <div class="card-retratil" id="parceiros">
             <h3>Parceiros que estão auxiliando para a realização do campeonato:</h3>
             <div class="cards-section">
@@ -320,14 +346,27 @@ gap: 8px;}
                     <p>FireGames Network</p>
                 </div>
             </a>
+            <a class='highlight-text hover-fix' target="_blank" href="https://www.instagram.com/mp3arenaesports/">
+                
                 <div class='card-x3'>
-                    <img src="https://wordpress-direta.s3.sa-east-1.amazonaws.com/wp-content/uploads/sites/5/2019/11/11150435/em-breve-1.png" alt="Logo Parceiro 2">
-                    <p>Em breve</p>
+                    <img src="./img/GyJjcUq3_400x400.jpg" class='filtered-img' alt="MP3 ARENA">
+                    <p>MP3 ARENA eSPORTS</p>
                 </div>
+            </a>
+            <a class='highlight-text hover-fix' target="_blank" href="https://flytche.com.br/">
+
                 <div class='card-x3'>
-                    <img src="https://wordpress-direta.s3.sa-east-1.amazonaws.com/wp-content/uploads/sites/5/2019/11/11150435/em-breve-1.png" alt="Logo Parceiro 3">
-                    <p>Em breve</p>
+                    <img src="./img/Fundo Azul.png" alt="FlyTchê">
+                    <p>FlyTchê</p>
                 </div>
+                </a>
+                <a class='highlight-text hover-fix' target="_blank" href="https://www.instagram.com/case.tri/">
+
+                    <div class='card-x3'>
+                        <img src="./img/a1b15938d0c8ef175bc055784c125bdd.jpg" alt="Case Tri">
+                        <p>Case Tri</p>
+                    </div>
+                    </a>
             </div>
         </div>
 
