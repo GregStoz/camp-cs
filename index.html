@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeonato Beneficente - CS 2</title>
+    <style>
+        /* Estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        /* Estilos do conteúdo principal */
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .highlight-text {
+            color: #007bff;
+        }
+
+        .highlight-link {
+            text-decoration: underline;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .highlight-link:hover {
+            color: white;
+        }
+
+        h3 {
+            margin-bottom: 16px;
+        }
+
+        h4 {
+            border-top: 1px solid  #ff7f0f;
+            margin-top: 16px;
+            padding-top: 16px;
+        }
+
+        .card-retratil {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            
+        }
+
+        .card-retratil h4 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos dos botões */
+        .btn-cta {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 16px;
+        }
+
+        .btn-cta:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos dos rodapés */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos específicos para CS2 */
+        .cs2-theme {
+            color: #ff7f0f; /* Laranja característico do CS2 */
+        }
+
+        /* Estilos para as seções de parceiros e instituições */
+        .cards-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card-x2,
+        .card-x3 {
+            flex: 1 1 200px; /* Crescimento, encolhimento, tamanho base */
+            max-width: 300px; /* Largura máxima */
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-x2 img,
+        .card-x3 img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="cs2-theme">CAMPEONATO BENEFICENTE - CS 2</h1>
+        <nav>
+            <ul>
+                <li><a href="#">INSCREVA-SE</a></li>
+                <li><a href="#">DOE</a></li>
+                <li><a href="#">PARCEIROS</a></li>
+                <li><a href="#">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="card-retratil">
+        <h2 class="highlight-text">ENTRE OS DIAS 10 E 12 DE MAIO</h2>
+        <h2 class="cs2-theme">
+            Você pode ajudar enquanto está jogando e concorrendo a prêmios!
+        </h2>
+        <h2 class="highlight-text">A sua doação vai <strong class="cs2-theme">diretamente</strong> para quem está atuando nos abrigos e nos resgates e <strong class="cs2-theme">já estará</strong> fazendo efeito enquanto você joga!</h2>
+
+            <h4>Sobre a organização</h4>
+            <p>Estamos realizando este evento para poder angariar fundos para os <strong>afetados pelas enchentes do RS</strong>. Junto de alguns parceiros conseguimos uma estrutura (servidores dedicados para a realização dos jogos) e premiações para os participantes, assim como o sorteio de skins. A taxa de inscrição será cobrada em forma de <strong>COMPROVANTE DE DOAÇÃO</strong>, no valor mínimo de <strong>R$50,00</strong> (cinquenta reais) por equipe, devendo ser apresentado na hora da inscrição e sem haver limite de doação (caso o seu time queira doar mais, agradecemos pela atitude e será muito bem vindo).</p>
+        
+            <h4>Sobre a inscrição</h4>
+            <p>OBS: <strong>NADA</strong> do dinheiro passará pela nossa mão ou será utilizado para a realização do campeonato, toda a estrutura e a premiação são ofertadas por parceiros e <strong>TODO</strong> o valor será destinado diretamente para o pessoal que está recebendo e resgatando pessoas.</p>
+            <p>No modelo de inscrição que adotamos, o valor <strong>JÁ ESTARÁ</strong> sendo utilizado diretamente para salvar vidas enquanto o campeonato estiver acontecendo. Ainda assim, estaremos documentando tudo e prestando contas junto aos participantes.</p>
+        
+            <h4>Sobre o formato</h4>
+            <p>O campeonato acontecerá na modalidade <strong>5 x 5 competitivo</strong>, no formato <strong>MD1 + Lower Bracket</strong> para que todos possam jogar ao menos duas partidas.</p>
+                
+            <p>Teremos picks e bans de mapa e o tempo médio esperado para a duração + organização de cada partida é de 1h e 20min.</p>    
+            <p>Os times terão 15min de tolerância para se apresentar ao lobby após a sinalização da organização. Em caso de atraso o time deverá chamar o reserva (se disponível) dentro desse tempo. Caso não consigam completar o o time, podem optar por jogar com o time incompleto ou derrota por WO.*</p>
+            <p><strong>*Casos de fairplay devem ser ajustados entre as equipes e a organização.</strong></p>
+        
+            <h4>Sobre as premiações</h4>
+            <p>Pensando em ajudar mais a comunidade, não estaremos disponibilizando troféu físico. O troféu dos campeões será feito via <strong>ASSINATURA STEAM</strong>. Ou seja, os jogadores do time campeão terão o perfil Steam assinado por <strong>pessoas influentes do cenário</strong> (obs.: as assinaturas não serão imediatas, podendo levar alguns dias para conseguirmos realizar tudo). Os brindes e prêmios serão giftcards e códigos promocionais exclusivos de sites e plataformas de parceiros. Teremos também algumas skins para sorteios entre os participantes do campeonato.</p>
+                
+            <p><em>OBS: não tem como haver REEMBOLSO na modalidade que atuamos, via comprovação de doação para instituições terceiras (vamos disponibilizar uma lista e vocês podem decidir no ato da inscrição, tudo transparente e comprovado). No caso de desistência, abriremos vaga reserva para completar o chaveamento.</em></p>    
+            <p><em>Os times participantes e o chaveamento serão divulgados em até 2h antes de começar a primeira partida.</em></p>
+
+            <a href="https://forms.gle/utqAJ3VdZzYdDK999" class="btn-cta">INSCREVA-SE AQUI</a>
+        </div>
+
+        <div class="card-retratil">
+            <h3>Instituições indicadas para as doações:</h3>
+            <div class="cards-section">
+                <div class='card-x2'>
+                    <img src="logo1.jpg" alt="Logo Instituição 1">
+                    <p>Nome da Instituição 1</p>
+                </div>
+                <div class='card-x2'>
+                    <img src="logo2.jpg" alt="Logo Instituição 2">
+                    <p>Nome da Instituição 2</p>
+                </div>
+                <div class='card-x2'>
+                    <img src="logo3.jpg" alt="Logo Instituição 3">
+                    <p>Nome da Instituição 3</p>
+                </div>
+                <div class='card-x2'>
+                    <img src="logo4.jpg" alt="Logo Instituição 4">
+                    <p>Nome da Instituição 4</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-retratil">
+            <h3>Parceiros que estão auxiliando para a realização do campeonato:</h3>
+            <div class="cards-section">
+                <div class='card-x3'>
+                    <img src="parceiro1.jpg" alt="Logo Parceiro 1">
+                    <p>Nome do Parceiro 1</p>
+                </div>
+                <div class='card-x3'>
+                    <img src="parceiro2.jpg" alt="Logo Parceiro 2">
+                    <p>Nome do Parceiro 2</p>
+                </div>
+                <div class='card-x3'>
+                    <img src="parceiro3.jpg" alt="Logo Parceiro 3">
+                    <p>Nome do Parceiro 3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-retratil">
+            <h3>Quer participar, nos ajudar ou tirar suas dúvidas?</h3>
+            <p>Entre em contato através do email: campeonatobeneficentecs@gmail.com</p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://bento.me/ajudars" target="_blank" class="cs2-theme highlight-link"><strong>INFORMAÇÕES SOBRE AS ENCHENTES E A SITUAÇÃO DO RS</strong></a>
+    </footer>
+</body>
+</html>
