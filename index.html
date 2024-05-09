@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campeonato Beneficente - CS 2</title>
+    <link rel="icon" href="https://ih1.redbubble.net/image.5273118055.5498/st,small,507x507-pad,600x600,f8f8f8.jpg" type="image/x-icon">
+    
     <style>
-        /* Estilos gerais */
+        
         * {
             margin: 0;
             padding: 0;
@@ -20,7 +22,7 @@
 
         }
 
-        /* Estilos do cabeçalho */
+        
         header {
             background-color: #333;
             color: #fff;
@@ -45,9 +47,14 @@
             font-weight: bold;
             text-transform: uppercase;
             font-size: 12px;
+            padding: 2px;
         }
 
-        /* Estilos do conteúdo principal */
+        nav a:hover {
+            color: #ff7f0f;
+            background-color: #eee;
+        }
+        
         main {
             padding: 20px;
         }
@@ -87,6 +94,10 @@
             padding-top: 16px;
         }
 
+        h5 {
+            margin-top: 8px;
+        }
+
         .card-retratil {
             background-color: #fff;
             border-radius: 5px;
@@ -104,7 +115,7 @@
             margin-bottom: 10px;
         }
 
-        /* Estilos dos botões */
+        
         .btn-cta {
             display: inline-block;
             background-color: #007bff;
@@ -122,7 +133,7 @@
             background-color: #0056b3;
         }
 
-        /* Estilos dos rodapés */
+        
         footer {
             background-color: #333;
             color: #fff;
@@ -139,12 +150,12 @@
             text-decoration: underline;
         }
 
-        /* Estilos específicos para CS2 */
+        
         .cs2-theme {
-            color: #ff7f0f; /* Laranja característico do CS2 */
+            color: #ff7f0f; 
         }
 
-        /* Estilos para as seções de parceiros e instituições */
+        
         .cards-section {
             display: flex;
             justify-content: center;
@@ -155,21 +166,57 @@
 
         .card-x2,
         .card-x3 {
-            flex: 1 1 200px; /* Crescimento, encolhimento, tamanho base */
-            max-width: 300px; /* Largura máxima */
-            background-color: #fff;
+            flex: 1 1 200px; 
+            max-width: 300px; 
+            background-color: #eee;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 20px;
             text-align: center;
         }
 
-        .card-x2 img,
-        .card-x3 img {
-            max-width: 100%;
-            height: auto;
+        .card-x2:hover, .card-x3:hover {
+            background-color: #fff;
+        }
+
+        .card-x2 img {
+            width: 250px;
+            height: 150px;
             margin-bottom: 10px;
         }
+
+        .card-x3 img {
+            max-width: 250px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .card-x2:hover img,
+        .card-x3:hover img {
+            
+            scale: 1.01;
+        }
+
+        .hover-fix {
+            width: 300px;
+            font-size: 12px;
+            
+        }
+
+        .hover-fix:hover {
+            background-color:#ff7f0f;
+            font-weight: bolder;
+        }
+
+        .highlight-btn {
+            font-size: 18px;
+        }
+
+        @media (max-width: 400px) {
+  ul { display: flex;
+flex-direction: column;
+gap: 8px;}
+}
     </style>
 </head>
 <body>
@@ -177,15 +224,16 @@
         <h1 class="cs2-theme">CAMPEONATO BENEFICENTE - CS 2</h1>
         <nav>
             <ul>
-                <li><a href="#">INSCREVA-SE</a></li>
-                <li><a href="#">DOE</a></li>
-                <li><a href="#">PARCEIROS</a></li>
-                <li><a href="#">CONTATO</a></li>
+                <li><a href="#inscreva-se">INSCREVA-SE</a></li>
+                <li><a href="#doe">DOE</a></li>
+                <li><a href="#parceiros">PARCEIROS</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+                <li><a href="https://discord.gg/36GWjRs9" target="_blank">DISCORD</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="card-retratil">
+        <div class="card-retratil" id="inscreva-se">
         <h2 class="highlight-text">ENTRE OS DIAS 10 E 12 DE MAIO</h2>
         <h2 class="cs2-theme">
             Você pode ajudar enquanto está jogando e concorrendo a prêmios!
@@ -212,52 +260,80 @@
             <p><em>OBS: não tem como haver REEMBOLSO na modalidade que atuamos, via comprovação de doação para instituições terceiras (vamos disponibilizar uma lista e vocês podem decidir no ato da inscrição, tudo transparente e comprovado). No caso de desistência, abriremos vaga reserva para completar o chaveamento.</em></p>    
             <p><em>Os times participantes e o chaveamento serão divulgados em até 2h antes de começar a primeira partida.</em></p>
 
-            <a href="https://forms.gle/utqAJ3VdZzYdDK999" class="btn-cta">INSCREVA-SE AQUI</a>
+            <div>
+
+                <a href="https://forms.gle/utqAJ3VdZzYdDK999" target="_blank" class="btn-cta">INSCREVA-SE AQUI COMO <span class="cs2-theme highlight-btn">EQUIPE</span></a>
+                <a href="https://forms.gle/fqpGSHkTtJErth6B8" target="_blank" class="btn-cta">INSCREVA-SE AQUI COMO <span class="cs2-theme highlight-btn">JOGADOR</span></a>
+                
+            </div>
+            
         </div>
 
-        <div class="card-retratil">
+        <div class="card-retratil" id="doe">
             <h3>Instituições indicadas para as doações:</h3>
             <div class="cards-section">
+                <a class='highlight-text hover-fix' target="_blank" href="https://www.vakinha.com.br/vaquinha/a-maior-campanha-solidaria-do-rs?utm_internal_source=tags">
                 <div class='card-x2'>
-                    <img src="logo1.jpg" alt="Logo Instituição 1">
-                    <p>Nome da Instituição 1</p>
-                </div>
+                    <img src="https://static.vakinha.com.br/uploads/vakinha/image/4712837/1714579840.27.png?ims=700x410" alt="A Maior Campanha Solidária do RS">
+                        <p>
+                            A Maior Campanha Solidária do RS
+                        </p>
+                    </div>
+                </a>
+                <a class='highlight-text hover-fix' target="_blank" href="https://apoia.se/enchentesrs">
                 <div class='card-x2'>
-                    <img src="logo2.jpg" alt="Logo Instituição 2">
-                    <p>Nome da Instituição 2</p>
+                    <img src="https://s3.amazonaws.com/assets.apoia.se/campaigns/604aa82d9602e0fdeb0f5feb%7Ccould-not-find-campaign/user-campaign-about-desc%7CSul21LCIMG30031080x720-20240508_19215190.jpg" alt="Cozinha Solidária">
+                    <p>Cozinha Solidária</p>
                 </div>
+            </a>
+            <a class='highlight-text hover-fix' target="_blank" href="https://www.cufars.org.br/doacao-institucional/">
                 <div class='card-x2'>
-                    <img src="logo3.jpg" alt="Logo Instituição 3">
-                    <p>Nome da Instituição 3</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Yr2twYWwqNZ3PLDs4JrYvVQP7s9k56IsAnQORZQBhA&s" alt="CUFA - RS">
+                    <p>CUFA - RS</p>
                 </div>
+            <a class='highlight-text hover-fix' target="_blank" href="https://apoia.se/sos_mst?fbclid=PAZXh0bgNhZW0CMTEAAaZoJCYHxQ6VaEQu48BlFzSGXX2MjfKlAxamwgCmkTTtvP8YRHZW0sA0s2o_aem_AUL_7lrFheTapGdTt4e0XFFhiaZCiCX0DslDXHnR9vksSKL8H72LGXuB9ERVg9wmGCiKaXO7jwFIqs3BdJCGQA9o">
+
                 <div class='card-x2'>
-                    <img src="logo4.jpg" alt="Logo Instituição 4">
-                    <p>Nome da Instituição 4</p>
+                    <img src="https://blogdoeveraldo.com/wp-content/uploads/2024/05/91361243-51FB-47D1-BE2E-73AE8DB35E97.jpeg" alt="MST">
+                    <p>MST pelas vítimas das enchentes</p>
                 </div>
+            </a>
+
             </div>
         </div>
 
-        <div class="card-retratil">
+        <div class="card-retratil" id="parceiros">
             <h3>Parceiros que estão auxiliando para a realização do campeonato:</h3>
             <div class="cards-section">
+            <a class='highlight-text hover-fix' target="_blank" href="https://beta.firegamesnetwork.com/">
+
                 <div class='card-x3'>
-                    <img src="parceiro1.jpg" alt="Logo Parceiro 1">
-                    <p>Nome do Parceiro 1</p>
+                    <img src="https://lh3.google.com/u/3/d/1oZ8HGuDegL1_9ZqDMyh22TcbR9SVCpoL=k" alt="FireGames Network">
+                    <p>FireGames Network</p>
+                </div>
+            </a>
+                <div class='card-x3'>
+                    <img src="https://wordpress-direta.s3.sa-east-1.amazonaws.com/wp-content/uploads/sites/5/2019/11/11150435/em-breve-1.png" alt="Logo Parceiro 2">
+                    <p>Em breve</p>
                 </div>
                 <div class='card-x3'>
-                    <img src="parceiro2.jpg" alt="Logo Parceiro 2">
-                    <p>Nome do Parceiro 2</p>
-                </div>
-                <div class='card-x3'>
-                    <img src="parceiro3.jpg" alt="Logo Parceiro 3">
-                    <p>Nome do Parceiro 3</p>
+                    <img src="https://wordpress-direta.s3.sa-east-1.amazonaws.com/wp-content/uploads/sites/5/2019/11/11150435/em-breve-1.png" alt="Logo Parceiro 3">
+                    <p>Em breve</p>
                 </div>
             </div>
         </div>
 
-        <div class="card-retratil">
+        <div class="card-retratil" id="contato">
             <h3>Quer participar, nos ajudar ou tirar suas dúvidas?</h3>
-            <p>Entre em contato através do email: campeonatobeneficentecs@gmail.com</p>
+            <p>Entre em contato através do email: <strong class="highlight-btn">campeonatobeneficentecs@gmail.com</strong></p>
+
+            <div>
+
+                <h5>Ou através do discord</h5>
+                
+                <a href="https://discord.gg/36GWjRs9" target="_blank" class="btn-cta">DISCORD</a>
+            </div>
+
         </div>
     </main>
 
